@@ -5,18 +5,26 @@ import { HttpModule } from '@angular/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import {NgbModule, NgbCarouselConfig} from '@ng-bootstrap/ng-bootstrap';
+import { ModalComponent } from './modal/modal.component';
+import { CarouselComponent } from './carousel/carousel.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ModalComponent,
+    CarouselComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgbModule.forRoot()
   ],
-  providers: [],
+  providers: [
+    NgbCarouselConfig
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
