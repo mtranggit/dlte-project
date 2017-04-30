@@ -1,0 +1,9 @@
+<section class="projects section" id="project-list">
+  <div class="site-width ma">
+    <ul class="projects__list grid">
+      <li *ngFor="let project of projects" class="projects__item projects__item--{{project.id}} grid-xs--12 grid-sm--6 grid-lg--3">
+        <dlte-project [project]="project"></dlte-project>
+      </li>
+    </ul>
+  </div>
+</section>
