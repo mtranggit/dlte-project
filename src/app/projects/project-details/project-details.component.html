@@ -1,3 +1,14 @@
-<p>
-  project-details works!
-</p>
+<section class="section project-details" id="project-details">
+  <div class="site-width ma ac">
+    <h2>{{ projectInfoDetails.name }}</h2>
+    <div class="projects-details__subtitle">
+      Service Offering <span class="subtitle__for">for</span> {{ projectInfoDetails.client_name }}
+    </div>
+    <div class="projects-details__description">{{ projectInfoDetails.description }}</div>
+    <button class="btn btn-secondary" (click)="gotoSite(projectInfoDetails.url)">Vist Site</button>
+    <!--{{ projectInfoDetails | json }}-->
+    <img [src]="projectInfoDetails.images[0].imageUrl" alt="Alt text for project">
+    <dlte-blurb>{{ projectInfoDetails.blurb }}</dlte-blurb>
+    <dlte-image-list [images]="projectInfoDetails.images"></dlte-image-list>
+  </div>
+</section>

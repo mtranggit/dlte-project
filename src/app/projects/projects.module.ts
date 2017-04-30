@@ -6,18 +6,24 @@ import { ProjectsComponent } from './projects.component';
 import { ProjectComponent } from './project/project.component';
 import { ProjectListComponent } from './project-list/project-list.component';
 import { ProjectDetailsComponent } from './project-details/project-details.component';
-
-
+import { BlurbComponent } from '../blurb/blurb.component';
+import { ImageListComponent } from '../image-list/image-list.component';
 @NgModule({
   imports: [
     CommonModule,
     ProjectsRoutingModule
   ],
+  exports: [
+    BlurbComponent,
+    ImageListComponent
+  ],
   declarations: [
     ProjectsComponent,
     ProjectComponent,
     ProjectListComponent,
-    ProjectDetailsComponent
+    ProjectDetailsComponent,
+    BlurbComponent,
+    ImageListComponent
   ]
 })
 export class ProjectsModule { }

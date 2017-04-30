@@ -8,9 +8,9 @@ import { AppComponent } from './app.component';
 import { NgbModule, NgbCarouselConfig } from '@ng-bootstrap/ng-bootstrap';
 import { ModalComponent } from './modal/modal.component';
 import { CarouselComponent } from './carousel/carousel.component';
-import { BlurbComponent } from './blurb/blurb.component';
-import { ImageListComponent } from './image-list/image-list.component';
-import { ImageComponent } from './image/image.component';
+// import { BlurbComponent } from './blurb/blurb.component';
+// import { ImageListComponent } from './image-list/image-list.component';
+// import { ImageComponent } from './image/image.component';
 import { ProjectsModule } from 'app/projects/projects.module';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
@@ -21,9 +21,9 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     AppComponent,
     ModalComponent,
     CarouselComponent,
-    BlurbComponent,
-    ImageListComponent,
-    ImageComponent,
+    // BlurbComponent,
+    // ImageListComponent,
+    // ImageComponent,
     HeaderComponent,
     FooterComponent,
     DashboardComponent

@@ -1,6 +1,6 @@
 <ngb-carousel>
   <ng-template ngbSlide *ngFor="let item of sliderCollections">
-    <img src="https://lorempixel.com/900/500?r={{item.id}}" alt="{{ item.alt }}" (click)="imageClicked()">
+    <img src="https://lorempixel.com/1200/600?r={{item.id}}" alt="{{ item.alt }}" (click)="imageClicked()">
     <div class="carousel-caption" (click)="imageClicked()">
       <h3>{{ item.caption }}</h3>
       <p>{{ item.excerpt }}</p>

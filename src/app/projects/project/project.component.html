@@ -1,7 +1,9 @@
 <div class="project__item">
   <a class="project__item"  (click)="selectProject(project)">
     <img [src]="getProjectImage(project.id)">
-    <!--<img [src]="'https://lorempixel.com/400/300?r={{project.id}}'">-->
   </a>
+  <!--<a [routerLink]="['/projects', project.id]" class="project__item">
+    <img [src]="getProjectImage(project.id)">
+  </a>-->
   <p class="project__excerpt">{{ project.excerpt }}</p>
 </div>

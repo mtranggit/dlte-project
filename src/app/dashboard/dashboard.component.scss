@@ -1,11 +1,9 @@
 @import '../../assets/sass/styles';
 
 :host {
-    .carousel-content {
-        position: absolute;
-        top: 30%;
-        left: 50%;
-        transform: translate(-50%, -30%);
+    .dashboard {
+        max-width:75em; 
+        margin: 0 5em;
         height: em(200);
         @include tablet-port {
             height: em(350);

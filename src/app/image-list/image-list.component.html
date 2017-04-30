@@ -1,3 +1,59 @@
-<p>
-  image-list works!
-</p>
+<div class="image-list section" id="image-list">
+  <div class="site-width ma">
+    <div class="grid">
+      <div class="grid-xs--12 image-list--top">
+        <img [src]="images[1].imageUrl" (click)="open(image1Caption)">
+      </div>
+      <div class="grid-xs--6 image-list--bottom-left">
+        <img [src]="images[2].imageUrl" (click)="open(image2Caption)">
+      </div>
+      <div class="grid-xs--6 image-list--bottom-right">
+        <img [src]="images[3].imageUrl" (click)="open(image3Caption)">
+      </div>
+    </div>
+
+    <ng-template #image1Caption let-c="close" let-d="dismiss">
+      <div class="modal-header">
+        <h4 class="modal-title">Modal title</h4>
+        <button type="button" class="close" aria-label="Close" (click)="d('Cross click')">
+      <span aria-hidden="true">&times;</span>
+    </button>
+      </div>
+      <div class="modal-body">
+        <p>One fine body 1&hellip;</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" (click)="c('Close click')">Close</button>
+      </div>
+    </ng-template>
+    <ng-template #image2Caption let-c="close" let-d="dismiss">
+      <div class="modal-header">
+        <h4 class="modal-title">Modal title</h4>
+        <button type="button" class="close" aria-label="Close" (click)="d('Cross click')">
+      <span aria-hidden="true">&times;</span>
+    </button>
+      </div>
+      <div class="modal-body">
+        <p>One fine body 2&hellip;</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" (click)="c('Close click')">Close</button>
+      </div>
+    </ng-template>
+    <ng-template #image3Caption let-c="close" let-d="dismiss">
+      <div class="modal-header">
+        <h4 class="modal-title">Modal title</h4>
+        <button type="button" class="close" aria-label="Close" (click)="d('Cross click')">
+      <span aria-hidden="true">&times;</span>
+    </button>
+      </div>
+      <div class="modal-body">
+        <p>One fine body 3&hellip;</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" (click)="c('Close click')">Close</button>
+      </div>
+    </ng-template>
+  </div>
+</div>
+<!--{{ images | json }}-->

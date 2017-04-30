@@ -1,0 +1,20 @@
+@import '../../../assets/sass/styles';
+
+:host {
+    .project-details {
+        h2 {
+            text-transform: uppercase;
+            font-size: em(48);
+        }
+        .projects-details__subtitle {
+            margin: 2em 0;
+        }
+        .subtitle__for {
+            text-transform: lowercase;
+            font-style: italic;
+        }
+        .projects-details__description {
+            margin: 2em 0;
+        }
+    }
+}

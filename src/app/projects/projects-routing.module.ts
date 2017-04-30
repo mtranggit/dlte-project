@@ -3,6 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { ProjectsComponent } from './projects.component';
 import { ProjectListComponent } from './project-list/project-list.component';
 import { ProjectComponent } from './project/project.component';
+import { ProjectDetailsComponent } from './project-details/project-details.component';
 
 const routes: Routes = [
   {
@@ -10,7 +11,7 @@ const routes: Routes = [
     component: ProjectsComponent,
     children: [
       { path: '', component: ProjectListComponent },
-      { path: 'project', component: ProjectComponent }
+      { path: ':id', component: ProjectDetailsComponent }
     ]
 
   }
