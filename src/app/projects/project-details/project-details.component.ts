@@ -17,6 +17,10 @@ export class ProjectDetailsComponent implements OnInit {
     this.projectInfoDetails = this.getProjectDetails(this.activatedRoute.snapshot.params['id']);
   }
 
+  gotoSite(url) {
+    console.log('Go to the external client website url...' + url);
+  }
+
   private getProjectDetails(id: number) {
     const project = {
       id: id,

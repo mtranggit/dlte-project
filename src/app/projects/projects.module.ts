@@ -8,6 +8,8 @@ import { ProjectListComponent } from './project-list/project-list.component';
 import { ProjectDetailsComponent } from './project-details/project-details.component';
 import { BlurbComponent } from '../blurb/blurb.component';
 import { ImageListComponent } from '../image-list/image-list.component';
+import { ImageComponent } from '../image/image.component';
+
 @NgModule({
   imports: [
     CommonModule,
@@ -15,7 +17,8 @@ import { ImageListComponent } from '../image-list/image-list.component';
   ],
   exports: [
     BlurbComponent,
-    ImageListComponent
+    ImageListComponent,
+    ImageComponent
   ],
   declarations: [
     ProjectsComponent,
@@ -23,7 +26,8 @@ import { ImageListComponent } from '../image-list/image-list.component';
     ProjectListComponent,
     ProjectDetailsComponent,
     BlurbComponent,
-    ImageListComponent
+    ImageListComponent,
+    ImageComponent
   ]
 })
 export class ProjectsModule { }
