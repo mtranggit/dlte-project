@@ -1,6 +1,6 @@
 # DlteProject
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0. Live [demo](https://dist-yaxlceftzw.now.sh)
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0. Live [demo](https://dist-kxxztjvjot.now.sh)
 
 ## Development server
 
